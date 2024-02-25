@@ -42,16 +42,16 @@ function App() {
           <input 
           type="text" 
           value={ password }
-          className="outline-none w-full py-1 px-3"
+          className="outline-none w-full py-1 px-3 rounded-l-md"
           placeholder='Password'
           readOnly
           ref={passwordRef}
           /> 
-          <button onClick={copyToClipboard} className="bg-blue-700 ">
+          <button onClick={copyToClipboard} className="bg-blue-700 rounded-r-md p-2">
             Copy</button>
         </div>
 
-        <div className='text-sm flex gap-x-2'>
+        <div className='text-sm flex gap-x-2 mt-2'>
           <div className='flex items-center gap-x-1'>
             <input 
             type="range"
