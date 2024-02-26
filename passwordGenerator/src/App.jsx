@@ -25,6 +25,7 @@ function App() {
 
   }, [length, numberAllowed, charAllowed, setPassword])
  
+  //function for copying to clipboard
   const copyToClipboard = useCallback(()=> {
     passwordRef.current?.select()
     passwordRef.current?.setSelectionRange(0, 99 )
@@ -47,7 +48,7 @@ function App() {
           readOnly
           ref={passwordRef}
           /> 
-          <button onClick={copyToClipboard} className="bg-blue-700 rounded-r-md p-2">
+          <button onClick={copyToClipboard} className="bg-yellow-300 rounded-r-md p-2">
             Copy</button>
         </div>
 
